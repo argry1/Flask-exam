@@ -38,19 +38,19 @@
 
 ```bash
 cd 7-9   # или cd 10-11
-3. Создайте виртуальное окружение
+### 3. Создайте виртуальное окружение
 bash
 python -m venv venv
-4. Активируйте окружение
+### 4. Активируйте окружение
 bash
 # Windows
 venv\Scripts\activate
 
 # Mac/Linux
 source venv/bin/activate
-5. Установите зависимости
+### 5. Установите зависимости
 bash
 pip install -r requirements.txt
-6. Запустите приложение
+### 6. Запустите приложение
 bash
 python serv.py
