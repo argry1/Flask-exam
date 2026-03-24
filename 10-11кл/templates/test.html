@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Переключатели</title>
+     <style type="text/css">
+    </style>
+ </head>
+ <body>
+ <p align="center"><font size="6" color="black" face="century gothic"><b>Насколько ты уверен в себе?</b></p>
+ <br />
+ <table border="1" width="100%" cellpadding="5">
+{% for sd in s %}
+
+
+
+<tr>
+    <td width="70%" align="center">{{sd}}
+        <div class = 'but'>
+        <form method="post">
+            <p align="center"><font size="4" face="century gothic"><input name="{{sd}}" type="radio" value="3">ДА</p>
+            <p align="center"><font size="4" face="century gothic"><input name="{{sd}}" type="radio" value="2">Скорее ДА, чем НЕТ</p>
+            <p align="center"><font size="4" face="century gothic"><input name="{{sd}}" type="radio" value="1">Скорее НЕТ, чем ДА</p>
+            <p align="center"><font size="4" face="century gothic"><input name="{{sd}}" type="radio" value="0">НЕТ</p>
+
+        </div>
+    </td>
+
+
+
+</tr>
+{% endfor %}
+ </table>
+
+
+    <p align="center"><input type="submit" value="Завершить"></p>
+ </form>
+   <br />
+
+
+ </body>
+</html>
