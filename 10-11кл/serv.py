@@ -43,7 +43,7 @@ def pristupit():
 def test():
     try:
         if request.method == 'GET':
-            with open('v2.csv', 'r', newline='') as csvfile:
+            with open('10-11.csv', 'r', newline='') as csvfile:
                 dr = csv.reader(csvfile, delimiter=' ', quotechar='|')
                 global s
                 s = []
